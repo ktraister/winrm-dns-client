@@ -15,7 +15,7 @@
 package main
 
 import (
-	"github.com/elliottsam/winrm-dns-client/cmd"
+	"github.com/ktraister/winrm-dns-client/cmd"
 )
 
 func main() {

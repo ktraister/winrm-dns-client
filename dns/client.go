@@ -2,10 +2,8 @@ package dns
 
 import (
 	"fmt"
-
-	"strings"
-
 	"github.com/masterzen/winrm"
+	"strings"
 )
 
 // TODO Make client configurable for HTTPS and certificates
