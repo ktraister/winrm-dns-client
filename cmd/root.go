@@ -31,7 +31,6 @@ var (
 	value      string
 	id         string
 	newvalue   string
-	port       string
 	newttl     float64
 	ttl        float64
 )

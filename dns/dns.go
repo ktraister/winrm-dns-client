@@ -11,9 +11,9 @@ type Record struct {
 	Name     string
 	Type     string
 	Value    string
-	TTL      float64
 	ID       string
 	NewValue string
+	TTL      float64
 	NewTTL   float64
 }
 
