@@ -37,10 +37,8 @@ func GenerateClient(sn, un, pwd string) Client {
 
 // ConfigureWinRMClient creates the connection to the winrm server
 func (c *Client) ConfigureWinRMClient() error {
-	//5985 is the std DNS port, we want to reach out to 6000 for the halibut
-	println("REACHING OUT TO 6000")
-	//endpoint := winrm.NewEndpoint(c.ServerName, 5985, false, false, nil, nil, nil, 0)
-	endpoint := winrm.NewEndpoint(c.ServerName, 6000, false, false, nil, nil, nil, 0)
+	//5985 is the std WinRM port
+	endpoint := winrm.NewEndpoint(c.ServerName, 5985, false, false, nil, nil, nil, 0)
 	client, err := winrm.NewClient(endpoint, c.Username, c.Password)
 	if err != nil {
 		return fmt.Errorf("Error creating WinRM client: %v", err)
